@@ -1,2 +1,2 @@
-# payment_payme
-Payment Payme Package for laravel projects
+# TeamproDev/Payment-PayMe
+Uzb national payment system Payme Integration to Laravel
