@@ -2,15 +2,18 @@
     "name": "teamprodev/payment-payme",
     "description": "Uzb national payment system Payme Integration to Laravel",
     "type": "library",
-    "require": {
-      "php": ">=7.3.0"
-    },
     "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Payment\\Payme\\": "src/"
+        }
+    },
     "authors": [
-      {
-        "name": "AzizbekDev",
-        "email": "azizbek_muzaffarov@mail.ru"
-      }
+        {
+            "name": "AzizbekDev",
+            "email": "azizbek_muzaffarov@mail.ru"
+        }
     ],
-    "minimum-stability": "dev"
-  }
+    "minimum-stability": "dev",
+    "require": {}
+}
