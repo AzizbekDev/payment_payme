@@ -33,7 +33,7 @@ class Payme
 
     /**
      * @return $this
-     * @throws \Exception
+     * @throws \PaymeException
      */
     public function handle(){
         $this->validateDriver();
@@ -44,18 +44,6 @@ class Payme
         }
 
         return $this;
-    }
-
-    /**
-     * @param $model
-     * @param $amount
-     * @throws \Exception
-     */
-    public function validateModel($model, $amount){
-        if (is_null($model))
-            throw new \Exception('Modal can\'t be null');
-        if (is_null($amount) || $amount == 0)
-            throw new \Exception('Amount can\'t be null or 0');
     }
 
     /**
